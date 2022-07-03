@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>Project 4</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+	<style>
+		.loader {
+			font-size: 60px;
+			text-align: center;
+			margin-top: 206px;
+			margin-bottom: 206px;
+		}
+
+		@media only screen and (max-width: 992px){
+			#aside {
+				display:  none !important;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class='container-fluid' style=' background-image:url(Images/Banner.jpg);z-index:1;padding-bottom:50px;'>
+		<h1 style='padding-top:50px'>PROJECT 4 NEWS</h1>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-secondary"  style='z-index:2;'>
+	  <a class="navbar-brand" href="project4.html">PROJECT 4 NEWS</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="project4.html"><i class="fas fa-home"></i> Home<span class="sr-only"></span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" id="vietnam">Vietnam News</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Find more...
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#" id="Movies">Movies</a>
+	          <a class="dropdown-item" href="#" id="Football">Football</a></a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#" id="Travel">Travel</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#"></a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0" >
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="input-search" val="taliban">
+	      <button class="btn btn-info my-2 my-sm-0" type="button" id="search">Search</button>
+	    </form>
+	  </div>
+	</nav>
+	<div class="loader">
+	      <span class="fas fa-spinner xoay icon"></span>
+	</div>
+	<main class="container-fluid bg-light">
+		<div class="row">
+			<div class="col-lg-9 col-12" id="content">
+				<section id="mainpage"></section>
+			</div>
+			<div class="col-lg-3" id='aside'>
+				<aside style="font-size: 12px"></aside>
+			</div>
+		</div>
+	</main>
+	<footer class="text-center text-white" style="background-color: #f1f1f1;">
+	  <!-- Grid container -->
+	  <div class="container pt-4">
+	    <!-- Section: Social media -->
+	    <section class="mb-4">
+	      <!-- Facebook -->
+	      <a
+	        class="btn btn-link btn-floating btn-lg text-dark m-1"
+	        href="#!"
+	        role="button"
+	        data-mdb-ripple-color="dark"
+	        ><i class="fab fa-facebook-f"></i
+	      ></a>
+
+	      <!-- Twitter -->
+	      <a
+	        class="btn btn-link btn-floating btn-lg text-dark m-1"
+	        href="#!"
+	        role="button"
+	        data-mdb-ripple-color="dark"
+	        ><i class="fab fa-twitter"></i
+	      ></a>
+
+	      <!-- Google -->
+	      <a
+	        class="btn btn-link btn-floating btn-lg text-dark m-1"
+	        href="#!"
+	        role="button"
+	        data-mdb-ripple-color="dark"
+	        ><i class="fab fa-google"></i
+	      ></a>
+
+	      <!-- Instagram -->
+	      <a
+	        class="btn btn-link btn-floating btn-lg text-dark m-1"
+	        href="#!"
+	        role="button"
+	        data-mdb-ripple-color="dark"
+	        ><i class="fab fa-instagram"></i
+	      ></a>
+
+	      <!-- Linkedin -->
+	      <a
+	        class="btn btn-link btn-floating btn-lg text-dark m-1"
+	        href="#!"
+	        role="button"
+	        data-mdb-ripple-color="dark"
+	        ><i class="fab fa-linkedin"></i
+	      ></a>
+	      <!-- Github -->
+	      <a
+	        class="btn btn-link btn-floating btn-lg text-dark m-1"
+	        href="#!"
+	        role="button"
+	        data-mdb-ripple-color="dark"
+	        ><i class="fab fa-github"></i
+	      ></a>
+	    </section>
+	    <!-- Section: Social media -->
+	  </div>
+	  <!-- Grid container -->
+
+	  <!-- Copyright -->
+	  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	    © 2021 Copyright:
+	    <a class="text-dark" href="project4.html">Project4.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<script>
+		window.setTimeout(function () {
+		  window.location.reload();
+		}, 120000);
+
+		$(window).on('load', function(event) {
+		   	$('.loader').delay(1500).fadeOut('fast');
+		});
+
+
+		$(document).ready(function() {
+			loadDataSection();
+			loadDataAside();
+			searchButton();
+			displayTravelNews();
+			displayVnNews();
+			displayMoviesNews();
+			displayFootballNews();
+		});
+
+		
+		function loadDataSection() {
+			$.ajax({
+				url: 'https://gnews.io/api/v4/search?q=science&token=a7ea7d5437dcbc2b8eafffd45db8f4b9&lang=en',
+				type: 'GET',
+				error: function(data){
+					console.log(data.status);
+					console.log(data.statusText);
+				},
+				success: function(data) {
+					var str = "";
+					var article = data["articles"];
+
+					for(var i = 0; i < article.length; i++) {
+						str += "<br><div class='container'>";
+						str += "<hr><div class='row'>";
+						str += "<div class='col-md-4'>";
+						str += "<figure>";
+						str += "<image src='" + article[i].image + "' width='100%' height='auto' alt='" + article[i].title + "'>";
+						str += "</div>";
+						str += "<div class='col-md-8'>";
+						str += "<a href ='"+ article[i].url + "'target='_blank'>";
+						str += "<h3>"+article[i].title + ".</h3></a>";
+						str += "<p>"+"<i>"+article[i].publishedAt + "</i></p>";
+						str += "<p>"+article[i].content +"</p>";
+						str += "</div></div></div>";
+					}
+					
+
+					$('#mainpage').html(str);
+					
+				}
+			});
+		}
+
+		function loadDataAside() {
+			$.ajax({
+				url: 'https://gnews.io/api/v4/top-headlines?token=a7ea7d5437dcbc2b8eafffd45db8f4b9&topic=breaking-news&lang=en&country=us',
+				type: 'GET',
+				error: function(data){
+					console.log(data.status);
+					console.log(data.statusText);
+				},
+				success: function(data) {
+					var str = "";
+					var article = data["articles"];
+
+					for(var i = 0; i < 6; i++) {
+						str += "<div class='container'>";
+						str += "<hr><div class='row'>";
+						str += "<figure>";
+						str += "<image src='" + article[i].image + "' width='100%' height='auto' alt='" + article[i].title + "'>";
+						str += "</figure>";
+						str += "</div>";
+						str += "<div class='row'>";
+						str += "<a href ='"+ article[i].url + "'target='_blank'>";
+						str += "<h5>"+article[i].title + ".</h5></a>";
+						str += "<p>"+article[i].description +"</p>";
+						str += "</div></div>";
+					}
+					
+					$('aside').html(str);
+					
+				}
+			});
+		}
+
+		function searchButton(){
+			var input = $("#input-search");
+			var search = $("#search");
+			search.click(function () {
+				var key = encodeURI(input.val());
+				var link =  'https://gnews.io/api/v4/search?q='+
+							key+
+							'&token=a7ea7d5437dcbc2b8eafffd45db8f4b9&lang=en';
+				displayOtherNews(link);
+			});
+		}
+
+		function displayVnNews(){
+			var display = $('#vietnam');
+			display.click(function () {
+				var key = encodeURI("viet nam");
+				var link =  'https://gnews.io/api/v4/search?q='+
+							key+
+							'&token=a7ea7d5437dcbc2b8eafffd45db8f4b9&lang=en';
+				displayOtherNews(link);
+			});
+		}
+
+		function displayMoviesNews(){
+			var display = $('#Movies');
+			display.click(function () {
+				var key = encodeURI("Netflix");
+				var link =  'https://gnews.io/api/v4/search?q='+
+							key+
+							'&token=a7ea7d5437dcbc2b8eafffd45db8f4b9&lang=en';
+				displayOtherNews(link);
+			});
+		}
+
+		function displayFootballNews(){
+			var display = $('#Football');
+			display.click(function () {
+				var key = encodeURI("Premier League");
+				var link =  'https://gnews.io/api/v4/search?q='+
+							key+
+							'&token=a7ea7d5437dcbc2b8eafffd45db8f4b9&lang=en';
+				displayOtherNews(link);
+			});
+		}
+
+		function displayTravelNews(){
+			var display = $('#Travel');
+			display.click(function () {
+				var key = encodeURI("Yellowstone");
+				var link =  'https://gnews.io/api/v4/search?q='+
+							key+
+							'&token=a7ea7d5437dcbc2b8eafffd45db8f4b9&lang=en';
+				displayOtherNews(link);
+			});
+		}
+
+		function displayOtherNews(link) {
+			$.ajax({
+				url: link,
+				type: 'GET',
+				error: function(data){
+					console.log(data.status);
+					console.log(data.statusText);
+				},
+				success: function(data) {
+					var str = "";
+					var article = data["articles"];
+
+					for(var i = 0; i < article.length; i++) {
+						str += "<br><div class='container'>";
+						str += "<hr><div class='row'>";
+						str += "<div class='col-md-4'>";
+						str += "<figure>";
+						str += "<image src='" + article[i].image + "' width='100%' height='auto' alt='" + article[i].title + "'>";
+						str += "</div>";
+						str += "<div class='col-md-8'>";
+						str += "<a href ='"+ article[i].url + "'target='_blank'>";
+						str += "<h3>"+article[i].title + ".</h3></a>";
+						str += "<p>"+"<i>"+article[i].publishedAt + "</i></p>";
+						str += "<p>"+article[i].content +"</p>";
+						str += "</div></div></div>";
+					}
+					
+
+					$('#mainpage').html(str);
+					
+				}
+			});
+		}
+	</script>
+</body>
+</html>
